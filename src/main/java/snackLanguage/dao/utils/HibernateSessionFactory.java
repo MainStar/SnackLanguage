@@ -15,6 +15,7 @@ public class HibernateSessionFactory {
                 .configure("hibernate.cfg.xml").build();
 
         sessionFactory = new MetadataSources(registry).buildMetadata().buildSessionFactory();
+        System.out.println("Hibernate Session Factory is open!");
 
         return sessionFactory;
     }

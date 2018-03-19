@@ -1,0 +1,10 @@
+snackLanguage/service/Impl/UsersDaoServiceImpl.class
+snackLanguage/rest/resources/RegistrationResources.class
+snackLanguage/service/interfaces/UserValidationService.class
+snackLanguage/servlets/WelcomeServlet.class
+snackLanguage/rest/restUrlApi/restURL.class
+snackLanguage/servlets/AccountServlet.class
+snackLanguage/dao/utils/HibernateSessionFactory.class
+snackLanguage/dao/entities/UserEntity.class
+snackLanguage/service/Impl/UserValidationServiceImpl.class
+snackLanguage/service/interfaces/UsersDaoService.class
