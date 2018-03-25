@@ -4,6 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8"/>
     <!--<link rel="stylesheet" href="resources/css/index.css" type="text/css">-->
 	<link rel="stylesheet" href="/SnackLanguage/resources/css/index.css" type="text/css"/>
+	<script type="text/javascript" src="/SnackLanguage/resources/scripts/authorization.js"></script>
 	<script type="text/javascript" src="/SnackLanguage/resources/scripts/registration.js"></script>
 	<title>Snack Language</title>
 </head>
@@ -15,12 +16,6 @@
 			<a href=""><h3>about us</h3></a>
 			<a href=""><h3>Languages</h3></a>
 		</div>
-	<script>
-		/*sign_in.onclick = signIn;*/
-		function signIn(){
-			prompt("name", name);
-		}
-	</script>
 		<div id="sign_in_panel">
 			<div>
 				<a href="#close" title="Закрыть" id="close">X</a>
@@ -28,6 +23,9 @@
 				<input id="name_autorization" type="text" placeholder=" Login"/>
 				<input id="password_autorization" type="password" placeholder=" Password" onclick="checkValidation()"/>
 				<input id="button_autorization" type="submit" value="Войти" onclick="checkValidation()"/>
+				<div id="wrong_authorization" style="display:none;">
+					<a style="color:red; font-size:17px; "><h5 style="padding-left:20%;">Неверно введен логин, или пароль!</h5></a>
+				</div>
 			</div>
 		</div>
 		<div id="login_parametr">
@@ -43,38 +41,13 @@
 					<select id="year"></select>
 					<select id="day"></select>
 					<select id="month"></select>
-					<script>
-						var year = document.getElementById('year');
-						var day = document.getElementById('day');
-						var month = document.getElementById('month');
-						var arr_monthes = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
-									"Июль", "Август", "Сентябрь", "Октябрь", "Ноябырь", "Декабырь"];
-						var z = 1;
-						var c = 1;
-						var m = 1;
-						year.options[0] = new Option("Выберите год");
-						day.options[0] = new Option("Выберите день");
-						month.options[0] = new Option("Выберите месяц");
-						for(var i = 2018; i > 1965; i--){
-							year.options[z] = new Option(i);
-							z++;
-						}
-						for(var x = 1; x < 32; x++){
-							day.options[c] = new Option(x);
-							c++;
-						}
-						for(var b = 1; b < arr_monthes.length; b++){
-							month.options[m] = new Option(arr_monthes[b]);
-							m++;
-						}
-					</script>
+					<script type="text/javascript" src="/SnackLanguage/resources/scripts/data_for_registration_fields.js"></script>
 				</div>
 				<div id="terms_of_use">
 					<a style="color:white"></h4>Нажимая «Создать аккаунт», вы соглашаетесь с нашими Условиями использования и подтверждаете, что ознакомились 							с нашей Политикой использования данных, включая применение файлов «cookie».</h4></a>
 				</div>
-				<input id="buton_create_account" type="submit" value="Создать аккаунт"/>
-				<a style="color:red; font-size:17px; visibility:hidden;"><h5 style="padding-left:20%;">Неверно введен логин, или пароль!</h5></a>
-				<a style="width:90%; position:absolute; margin-top:-2%; color:red; font-size:17px; visibility:hidden;"><h5 style="padding-left:8%;">Для регистрации необходимо заполнить все поля!</h5></a>
+					<input id="buton_create_account" type="submit" value="Создать аккаунт" onclick="registration()"/>
+				<a id="not_full_registration" style="width:90%; position:absolute; margin-top:-2%; color:red; font-size:17px; display:none;"><h5 style="padding-left:8%;">Для регистрации необходимо заполнить все поля!</h5></a>
 			</form>
 		</div>
 		<script>

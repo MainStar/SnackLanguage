@@ -25,7 +25,7 @@
     <show-object-properties value="true" />
     <loaded-nodes>
       <connection connection-id="fff9aac1-f4af-4cc3-8181-ad56b13be9c1">
-        <schema name="SnackLanguage" object-types="column, constraint, function, index, procedure, table, dataset trigger, view" />
+        <schema name="SnackLanguage" object-types="column, function, procedure, table, view" />
       </connection>
     </loaded-nodes>
   </component>

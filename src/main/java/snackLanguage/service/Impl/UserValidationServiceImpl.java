@@ -28,7 +28,6 @@ public class UserValidationServiceImpl implements UserValidationService {
         System.out.println(usersList.size() + " Size of the array of users!");
 
         for (int i = 0; i < usersList.size(); i++){
-            System.out.println("We are at cukl!!!");
             System.out.println(usersList.get(i).getUser_email() + " Проверка!!! " + login);
             if (usersList.get(i).getUser_email().equals(login)){
                 return "valid";

@@ -1,10 +1,13 @@
+/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/servlets/AccountServlet.java
+/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/dao/utils/HibernateSessionFactory.java
+/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/rest/resources/AuthorizationResources.java
+/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/service/Impl/UserRegistrationServiceImpl.java
+/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/service/Impl/UserValidationServiceImpl.java
 /home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/dao/entities/UserEntity.java
 /home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/servlets/WelcomeServlet.java
 /home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/rest/resources/RegistrationResources.java
 /home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/service/Impl/UsersDaoServiceImpl.java
 /home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/service/interfaces/UsersDaoService.java
-/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/servlets/AccountServlet.java
-/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/dao/utils/HibernateSessionFactory.java
+/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/service/interfaces/UserRegistrationService.java
 /home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/rest/restUrlApi/restURL.java
 /home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/service/interfaces/UserValidationService.java
-/home/mainstar/Idea Projects/SnackLanguage/src/main/java/snackLanguage/service/Impl/UserValidationServiceImpl.java

@@ -3,12 +3,14 @@ package snackLanguage.service.Impl;
 import org.hibernate.Criteria;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.criterion.Order;
 import snackLanguage.dao.utils.HibernateSessionFactory;
 import snackLanguage.service.interfaces.UsersDaoService;
 import snackLanguage.dao.entities.UserEntity;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 
 /**
@@ -16,10 +18,11 @@ import java.util.List;
 
 public class UsersDaoServiceImpl implements UsersDaoService {
 
-    private Session session;
+    private SessionFactory sessionFactory;
+    private Session session = openSession();
 
     public Session openSession() {
-        SessionFactory sessionFactory = HibernateSessionFactory.getSessionFactory();
+        sessionFactory = HibernateSessionFactory.getSessionFactory();
         return sessionFactory.openSession();
     }
 
@@ -29,8 +32,11 @@ public class UsersDaoServiceImpl implements UsersDaoService {
     }
 
     public void saveUser(UserEntity user) {
+        System.out.println(user);
         session.save(user);
-        session.getTransaction().commit();
+        Transaction th = session.getTransaction();
+        th.begin();
+        th.commit();
         closeSession();
     }
 
