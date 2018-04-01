@@ -10,6 +10,7 @@ import snackLanguage.service.interfaces.UsersDaoService;
 import snackLanguage.dao.entities.UserEntity;
 
 import java.util.List;
+import java.util.TimeZone;
 import java.util.logging.Logger;
 
 
@@ -22,8 +23,7 @@ public class UsersDaoServiceImpl implements UsersDaoService {
     private Session session = openSession();
 
     public Session openSession() {
-        sessionFactory = HibernateSessionFactory.getSessionFactory();
-        return sessionFactory.openSession();
+        return HibernateSessionFactory.getSessionFactory().withOptions().jdbcTimeZone(TimeZone.getTimeZone("UTC")).openSession();
     }
 
     /** Save field of Session to make some operations with DB */

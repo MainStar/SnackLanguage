@@ -31,5 +31,9 @@
     <extension>jpeg</extension>
     <mime-type>image/jpeg</mime-type>
   </mime-mapping>
+  <mime-mapping>
+    <extension>jpg</extension>
+    <mime-type>image/pjpeg</mime-type>
+  </mime-mapping>
 
 </web-app>

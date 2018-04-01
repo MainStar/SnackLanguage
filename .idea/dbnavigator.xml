@@ -23,11 +23,7 @@
     <autoscroll-to-editor value="false" />
     <autoscroll-from-editor value="true" />
     <show-object-properties value="true" />
-    <loaded-nodes>
-      <connection connection-id="fff9aac1-f4af-4cc3-8181-ad56b13be9c1">
-        <schema name="SnackLanguage" object-types="column, function, procedure, table, view" />
-      </connection>
-    </loaded-nodes>
+    <loaded-nodes />
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="fff9aac1-f4af-4cc3-8181-ad56b13be9c1">
